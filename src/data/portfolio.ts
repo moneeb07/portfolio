@@ -2,7 +2,7 @@ export const portfolioData = {
   personal: {
     name: "Moneeb Ur Rahman",
     role: "Machine Learning Engineer & Full Stack Developer",
-    profileImage: "/images/profile.jpg",
+    // profileImage: "/images/profile.jpg",
     email: "mrahman.bscs23seecs@seecs.edu.pk",
     phone: "+92-321-7935820",
     linkedin: "https://www.linkedin.com/in/moneeb-ur-rahman-0533b0247/",
