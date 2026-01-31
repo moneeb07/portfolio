@@ -106,14 +106,14 @@ export default function Hero() {
             {/* Profile image container */}
             <div className="relative w-48 h-48 md:w-64 md:h-64 lg:w-72 lg:h-72 rounded-2xl p-1 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500">
               <div className="w-full h-full rounded-2xl overflow-hidden bg-black/50 backdrop-blur-sm">
-                <Image
+                {/* <Image
                   src={portfolioData.personal.profileImage}
                   alt={portfolioData.personal.name}
                   width={400}
                   height={400}
                   className="w-full h-full object-cover"
                   priority
-                />
+                /> */}
               </div>
             </div>
 
