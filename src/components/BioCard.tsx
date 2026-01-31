@@ -13,9 +13,9 @@ export default function BioCard() {
       transition={{ duration: 0.5 }}
       className="clean-card mb-8 overflow-hidden"
     >
-      <div className="flex flex-col md:flex-row gap-8 items-start">
+      <div className="flex flex-row gap-6 md:gap-8 items-start">
         {/* Left: Image */}
-        <div className="w-full md:w-1/5 flex-shrink-0 max-w-[160px]">
+        <div className="w-24 md:w-32 lg:w-40 flex-shrink-0">
           <div className="relative w-full aspect-square rounded-lg overflow-hidden border border-gray-100 dark:border-zinc-700 shadow-sm">
              <Image
               src={portfolioData.personal.profileImage}
