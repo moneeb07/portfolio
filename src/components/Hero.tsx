@@ -100,12 +100,12 @@ export default function Hero() {
             className="relative flex-shrink-0"
           >
             {/* Glowing rings */}
-            <div className="absolute inset-0 rounded-full bg-gradient-to-r from-blue-500 to-purple-500 blur-2xl opacity-30 animate-pulse" />
-            <div className="absolute -inset-4 rounded-full bg-gradient-to-r from-blue-500/20 via-purple-500/20 to-pink-500/20 animate-spin" style={{ animationDuration: "8s" }} />
+            <div className="absolute inset-0 rounded-2xl bg-gradient-to-r from-blue-500 to-purple-500 blur-2xl opacity-30 animate-pulse" />
+            <div className="absolute -inset-4 rounded-2xl bg-gradient-to-r from-blue-500/20 via-purple-500/20 to-pink-500/20 animate-spin" style={{ animationDuration: "8s" }} />
             
             {/* Profile image container */}
-            <div className="relative w-64 h-64 md:w-80 md:h-80 lg:w-96 lg:h-96 rounded-full p-1 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500">
-              <div className="w-full h-full rounded-full overflow-hidden bg-black/50 backdrop-blur-sm">
+            <div className="relative w-48 h-48 md:w-64 md:h-64 lg:w-72 lg:h-72 rounded-2xl p-1 bg-gradient-to-r from-blue-500 via-purple-500 to-pink-500">
+              <div className="w-full h-full rounded-2xl overflow-hidden bg-black/50 backdrop-blur-sm">
                 <Image
                   src={portfolioData.personal.profileImage}
                   alt={portfolioData.personal.name}
