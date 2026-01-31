@@ -15,8 +15,8 @@ export default function BioCard() {
     >
       <div className="flex flex-col md:flex-row gap-8 items-start">
         {/* Left: Image */}
-        <div className="w-full md:w-1/3 flex-shrink-0 max-w-[280px]">
-          <div className="relative w-full aspect-[4/5] rounded-lg overflow-hidden border border-gray-100 dark:border-zinc-700 shadow-sm">
+        <div className="w-full md:w-1/4 flex-shrink-0 max-w-[200px]">
+          <div className="relative w-full aspect-square rounded-lg overflow-hidden border border-gray-100 dark:border-zinc-700 shadow-sm">
              <Image
               src={portfolioData.personal.profileImage}
               alt={portfolioData.personal.name}
