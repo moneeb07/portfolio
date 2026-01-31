@@ -17,13 +17,13 @@ export default function BioCard() {
         {/* Left: Image */}
         <div className="w-24 md:w-32 lg:w-40 flex-shrink-0">
           <div className="relative w-full aspect-square rounded-lg overflow-hidden border border-gray-100 dark:border-zinc-700 shadow-sm">
-             <Image
+             {/* <Image
               src={portfolioData.personal.profileImage}
               alt={portfolioData.personal.name}
               fill
               className="object-cover"
               priority
-            />
+            /> */}
           </div>
           <p className="text-xs text-center text-gray-500 mt-2">
             Based in {portfolioData.personal.location}
