@@ -8,7 +8,7 @@ import { motion } from "framer-motion";
 
 export default function Header() {
   const navLinks = [
-    { name: "About", href: "#about" },
+    { name: "Aboutttt", href: "#about" },
     { name: "Projects", href: "#projects" },
     { name: "Skills", href: "#skills" },
     { name: "Education", href: "#education" },
