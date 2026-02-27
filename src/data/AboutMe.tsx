@@ -2,17 +2,17 @@ export default function AboutMe() {
   return (
     <>
       <p>
-        I&apos;m Creative Director and UI/UX Designer from Sydney, Australia,
-        working in web development and print media. I enjoy turning complex
-        problems into simple, beautiful and intuitive designs.
+        I'm a Full Stack and AI Engineer with 1 year of experience building modern web applications
+        and AI-powered systems.
       </p>
       <p>
-        My job is to build your website so that it is functional and
-        user-friendly but at the same time attractive. Moreover, I add personal
-        touch to your product and make sure that is eye-catching and easy to
-        use. My aim is to bring across your message and identity in the most
-        creative way. I created web design for many famous brand companies.
+        I’m a fast learner who adapts quickly to new technologies and applies them in real-world projects.
+         I focus on strong fundamentals, clean architecture, and continuous improvement while building practical 
+         solutions. I don’t claim expertise without proper understanding — when I say I know a technology, it means I’ve
+          worked with it deeply and can apply it confidently. If you want to build a website for your business or automate
+           your daily tasks using AI, feel free to reach out.
       </p>
+
     </>
   );
 }
