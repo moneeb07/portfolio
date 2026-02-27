@@ -1,0 +1,47 @@
+import { image } from "framer-motion/client";
+
+export const projects = [
+    {
+      title: "Kisan Dost",
+      // category : "Ai/Ml",
+      subtitle: "Crop Yield Prediction System",
+      image: "/images/kissan-dost.png",
+      tech: ["Python", "Scikit-learn", "XGBoost", "Streamlit"],
+      description: "Developed supervised regression models with Random Forest achieving R² = 0.9679. Deployed a live web application for real-time yield prediction.",
+      linkDemo: "https://kissan-dost-ekjs3enydkymoze3lgkdzd.streamlit.app/",
+      linkGithub: "https://github.com/moneeb07/Kissan-Dost",
+      status: "Completed",
+    },
+    {
+      title: "InterviewAI",
+      // category : "web development + GenAI",
+      subtitle: "InterviewAi",
+      image: "/images/interviewAi.png",
+      tech: ["MERN Stack", "Judge0", "Python"],
+      description: "Full-stack platform for technical hiring with voice, coding, and system design rounds. Integrated proctoring with plagiarism checks.",
+      linkDemo: "https://web.interview-ai.tech/",
+      linkGithub: "https://github.com/moneeb07/InterviewAICombined",
+      status: "Completed",
+    },
+    {
+      title: "Reinforcement Learning Escape Room",
+      // category : "Ai/Ml",
+      tech: ["Python", "PyTorch", "Gymnasium", "NumPy"],
+      description: "Implemented an RL environment where an agent navigates to collect a key while avoiding adversarial bullets and ghosts using Q-learning.",
+      linkDemo: "",
+      linkGithub: "https://github.com/moneeb07/Escape-game-rl",
+      image : "/images/escape-room.png",
+      status: "Completed",
+    },
+    {
+      title: "Class Management System",
+      subtitle: "LMS",
+      // category : "web development",
+      image: "/images/cms.png",
+      tech: ["MongoDB", "Express.js", "React", "Node.js"],
+      description: "LMS with JWT authentication, RBAC for faculty/students, and RESTful APIs for assignment management and file uploads.",
+      linkDemo : "https://class-management-with-chat.vercel.app/",
+      linkGithub : "https://github.com/moneeb07/Class-Management-with-Chat",
+      status: "Completed",
+    },
+  ];

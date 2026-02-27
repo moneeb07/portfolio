@@ -1,26 +1,39 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
-import { portfolioData } from "@/data/portfolio";
+import Sidebar from "@/components/Sidebar";
+import Navbar from "@/components/Navbar";
 
-const inter = Inter({ subsets: ["latin"] });
+const poppins = Poppins({
+  subsets: ["latin"],
+  weight: ["300", "400", "500", "600"],
+  variable: "--ff-poppins",
+});
 
 export const metadata: Metadata = {
-  title: `${portfolioData.personal.name}`,
-  description: portfolioData.personal.role,
+  title: "vCard - Personal Portfolio",
+  description: "Personal portfolio website built with Next.js",
+  icons: {
+    icon: "/images/logo.ico",
+  },
 };
-
-import { ThemeProvider } from "@/components/ThemeProvider";
 
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en">
-      <body className={inter.className}>
-        <ThemeProvider>{children}</ThemeProvider>
+      <body className={poppins.className}>
+        <main>
+          <Sidebar />
+
+          <div className="main-content">
+            <Navbar />
+            {children}
+          </div>
+        </main>
       </body>
     </html>
   );
