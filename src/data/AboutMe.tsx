@@ -12,7 +12,6 @@ export default function AboutMe() {
           worked with it deeply and can apply it confidently. If you want to build a website for your business or automate
            your daily tasks using AI, feel free to reach out.
       </p>
-
     </>
   );
 }
