@@ -8,6 +8,7 @@ interface Testimonial {
   name: string;
   avatar: string;
   text: string;
+  date: string;
 }
 
 interface TestimonialModalProps {
@@ -52,7 +53,7 @@ export default function TestimonialModal({
 
         <div className="modal-content">
           <h4 className="h3 modal-title">{testimonial.name}</h4>
-          <time dateTime="2021-06-14">14 June, 2021</time>
+          <time dateTime={testimonial.date}>{testimonial.date}</time>
           <div>
             <p>{testimonial.text}</p>
           </div>

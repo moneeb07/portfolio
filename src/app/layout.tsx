@@ -11,10 +11,10 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "vCard - Personal Portfolio",
+  title: "Moneeb Ur Rahman",
   description: "Personal portfolio website built with Next.js",
   icons: {
-    icon: "/images/logo.ico",
+    icon: "/images/profile.jpg",
   },
 };
 

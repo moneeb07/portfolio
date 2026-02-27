@@ -5,7 +5,6 @@ import Image from "next/image";
 import TestimonialModal from "@/components/TestimonialModal";
 import { services } from "@/data/services";
 import { testimonials } from "@/data/testimonials";
-import { clients } from "@/data/clients";
 import AboutMe from "@/data/AboutMe";
 
 
