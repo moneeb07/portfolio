@@ -101,7 +101,7 @@ export default function Sidebar() {
             </div>
           </li>
 
- 
+
           <li className="contact-item">
             <div className="icon-box">
               <IoLocationOutline />
@@ -117,12 +117,23 @@ export default function Sidebar() {
 
         <ul className="social-list">
           <li className="social-item">
-            <a href={personalData.github} className="social-link">
+            <a
+              href={personalData.github}
+              className="social-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <IoLogoGithub />
             </a>
           </li>
+
           <li className="social-item">
-            <a href={personalData.linkedin} className="social-link">
+            <a
+              href={personalData.linkedin}
+              className="social-link"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
               <IoLogoLinkedin />
             </a>
           </li>
