@@ -13,6 +13,20 @@ export const projects = [
     status: "Completed",
   },
   {
+    title: "Askify",
+    // category : "web development + GenAI",
+    subtitle: "Askify",
+    image: "/images/askify.png",
+    tech: [ "Fast-Api" , "LangChain" ,"Pinecone","Next.js","Supabase"],
+    description: "This is a full-stack document intelligence platform. Users upload a document and it is automatically chunked, embedded, and indexed into Pinecone."+ 
+                  "From that point, users can ask natural language questions and receive real-time answers streamed token by token via Server-Sent Events."+
+                 "Every answer includes the exact source chunks from the document it was derived from, complete with relevance scores, so users can verify what the AI used to generate the response." + 
+                 " This is not a wrapper around a generic chatbot. It is a purpose-built RAG system with a transparent and auditable reasoning chain.",
+    linkDemo: "https://askify-v1.vercel.app/",
+    linkGithub: "https://github.com/moneeb07/Askify",
+    status: "Completed",
+  },
+  {
     title: "Spm-Agent",
     // category : "web development + GenAI",
     subtitle: "Spm-Agent",
