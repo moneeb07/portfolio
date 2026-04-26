@@ -1,12 +1,12 @@
 export const experiences = [
   {
     title: "Full Stack & AI Engineer",
-    duration: "2024 - Present",
+    duration: "July 2024 - Present",
     description: "Lead developer for multiple AI-powered platforms including Askify (RAG platform) and InterviewAI. Specializing in integrating LLMs with modern web stacks, vector databases, and real-time streaming.",
   },
   {
     title: "Machine Learning Developer",
-    duration: "2023 - 2024",
+    duration: "Nov 2025 - Jan 2026",
     description: "Developed predictive models and reinforcement learning environments. Built 'Kisan Dost', a crop yield prediction system with 96%+ accuracy, and custom RL escape room simulations.",
   },
 
