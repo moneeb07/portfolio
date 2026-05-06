@@ -13,15 +13,25 @@ export const projects = [
     status: "Completed",
   },
   {
+    title: "StackShadow",
+    subtitle: "StackShadow",
+    image: "/images/stackShadow.png",
+    tech: ["Next.js", "Supabase", "Gemini 2.5 Flash", "Groq LLaMA", "Tavily", "GitHub API"],
+    description: "Multi-agent system that audits GitHub repos for vulnerabilities and dependency risks. Recommends alternatives with cost breakdown charts comparing current vs. recommended stacks.",
+    linkDemo: "https://stack-shadow.vercel.app/",
+    linkGithub: "https://github.com/moneeb07/StackShadow",
+    status: "Completed",
+  },
+  {
     title: "Askify",
     // category : "web development + GenAI",
     subtitle: "Askify",
     image: "/images/askify.png",
-    tech: [ "Fast-Api" , "LangChain" ,"Pinecone","Next.js","Supabase"],
-    description: "This is a full-stack document intelligence platform. Users upload a document and it is automatically chunked, embedded, and indexed into Pinecone."+ 
-                  "From that point, users can ask natural language questions and receive real-time answers streamed token by token via Server-Sent Events."+
-                 "Every answer includes the exact source chunks from the document it was derived from, complete with relevance scores, so users can verify what the AI used to generate the response." + 
-                 " This is not a wrapper around a generic chatbot. It is a purpose-built RAG system with a transparent and auditable reasoning chain.",
+    tech: ["Fast-Api", "LangChain", "Pinecone", "Next.js", "Supabase"],
+    description: "This is a full-stack document intelligence platform. Users upload a document and it is automatically chunked, embedded, and indexed into Pinecone." +
+      "From that point, users can ask natural language questions and receive real-time answers streamed token by token via Server-Sent Events." +
+      "Every answer includes the exact source chunks from the document it was derived from, complete with relevance scores, so users can verify what the AI used to generate the response." +
+      " This is not a wrapper around a generic chatbot. It is a purpose-built RAG system with a transparent and auditable reasoning chain.",
     linkDemo: "https://askify-v1.vercel.app/",
     linkGithub: "https://github.com/moneeb07/Askify",
     status: "Completed",
