@@ -2,9 +2,9 @@
 
 import { useState } from "react";
 import Image from "next/image";
-import { IoEyeOutline } from "react-icons/io5";
+import { IoEyeOutline, IoOpenOutline } from "react-icons/io5";
 import ProjectModal from "../../components/ProjectModal";
-const { projects } = require("../../data/projects");
+import { projects } from "../../data/projects";
 
 // Type definition for project
 type Project = {
@@ -68,6 +68,18 @@ export default function PortfolioPage() {
                 <h3 className="project-title">{project.title}</h3>
                 <p className="project-category">{project.subtitle || ""}</p>
               </button>
+
+              {project.linkDemo && (
+                <a
+                  href={project.linkDemo}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="project-card-demo-btn"
+                >
+                  <IoOpenOutline />
+                  <span>Demo</span>
+                </a>
+              )}
             </li>
           ))}
         </ul>

@@ -1,8 +1,101 @@
 "use client";
 
-import { IoBookOutline, IoBriefcaseOutline } from "react-icons/io5";
+import {
+  IoBookOutline,
+  IoBriefcaseOutline,
+  IoFlaskOutline,
+  IoTrophyOutline,
+  IoOpenOutline,
+} from "react-icons/io5";
 import { personalData } from "@/data/personalData";
-import { experiences, skills } from "@/data/resumeData";
+import {
+  awards,
+  experiences,
+  researchExperience,
+  skills,
+} from "@/data/resumeData";
+
+type TimelineEntry = {
+  title: string;
+  organization: string;
+  organizationUrl?: string;
+  project?: string;
+  projectUrl?: string;
+  duration: string;
+  location?: string;
+  advisors?: string;
+  linkDemo?: string;
+  bullets: string[];
+};
+
+function TimelineEntryItem({ entry }: { entry: TimelineEntry }) {
+  return (
+    <li className="timeline-item">
+      <h4 className="h4 timeline-item-title">{entry.title}</h4>
+
+      <p className="timeline-item-org">
+        {entry.organizationUrl ? (
+          <a
+            href={entry.organizationUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="timeline-link"
+          >
+            {entry.organization}
+          </a>
+        ) : (
+          entry.organization
+        )}
+        {entry.project && (
+          <>
+            {" · "}
+            {entry.projectUrl ? (
+              <a
+                href={entry.projectUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="timeline-link"
+              >
+                {entry.project}
+              </a>
+            ) : (
+              entry.project
+            )}
+          </>
+        )}
+      </p>
+
+      <span>
+        {entry.duration}
+        {entry.location ? ` — ${entry.location}` : ""}
+      </span>
+
+      {entry.advisors && (
+        <p className="timeline-item-meta">Advisors: {entry.advisors}</p>
+      )}
+
+      <ul className="timeline-bullets">
+        {entry.bullets.map((bullet, i) => (
+          <li className="timeline-bullet" key={i}>
+            {bullet}
+          </li>
+        ))}
+      </ul>
+
+      {entry.linkDemo && (
+        <a
+          href={entry.linkDemo}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="timeline-demo-link"
+        >
+          <IoOpenOutline />
+          <span>View Demo</span>
+        </a>
+      )}
+    </li>
+  );
+}
 
 export default function ResumePage() {
   return (
@@ -11,22 +104,34 @@ export default function ResumePage() {
         <h2 className="h2 article-title">Resume</h2>
       </header>
 
-      {/* Experience */}
+      {/* Research Experience */}
+      <section className="timeline">
+        <div className="title-wrapper">
+          <div className="icon-box">
+            <IoFlaskOutline />
+          </div>
+          <h3 className="h3">Research Experience</h3>
+        </div>
+
+        <ol className="timeline-list">
+          {researchExperience.map((entry, index) => (
+            <TimelineEntryItem entry={entry} key={index} />
+          ))}
+        </ol>
+      </section>
+
+      {/* Industry Experience */}
       <section className="timeline">
         <div className="title-wrapper">
           <div className="icon-box">
             <IoBriefcaseOutline />
           </div>
-          <h3 className="h3">Experience</h3>
+          <h3 className="h3">Industry Experience</h3>
         </div>
 
         <ol className="timeline-list">
-          {experiences.map((exp, index) => (
-            <li className="timeline-item" key={index}>
-              <h4 className="h4 timeline-item-title">{exp.title}</h4>
-              <span>{exp.duration}</span>
-              <p className="timeline-text">{exp.description}</p>
-            </li>
+          {experiences.map((entry, index) => (
+            <TimelineEntryItem entry={entry} key={index} />
           ))}
         </ol>
       </section>
@@ -51,6 +156,38 @@ export default function ResumePage() {
         </ol>
       </section>
 
+      {/* Awards & Achievements */}
+      <section className="timeline">
+        <div className="title-wrapper">
+          <div className="icon-box">
+            <IoTrophyOutline />
+          </div>
+          <h3 className="h3">Awards &amp; Achievements</h3>
+        </div>
+
+        <ol className="timeline-list">
+          {awards.map((award, index) => (
+            <li className="timeline-item" key={index}>
+              <h4 className="h4 timeline-item-title">
+                {award.link ? (
+                  <a
+                    href={award.link}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="timeline-link"
+                  >
+                    {award.title}
+                  </a>
+                ) : (
+                  award.title
+                )}
+              </h4>
+              <p className="timeline-text">{award.description}</p>
+            </li>
+          ))}
+        </ol>
+      </section>
+
       {/* Skills */}
       <section className="skill">
         <h3 className="h3 skills-title">My skills</h3>
@@ -64,8 +201,8 @@ export default function ResumePage() {
               </div>
 
               <div className="skill-progress-bg">
-                <div 
-                  className="skill-progress-fill" 
+                <div
+                  className="skill-progress-fill"
                   style={{ width: `${skill.level}%` }}
                 ></div>
               </div>

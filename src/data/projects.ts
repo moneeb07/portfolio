@@ -1,6 +1,17 @@
-import { image } from "framer-motion/client";
-
 export const projects = [
+  {
+    title: "CivicAI Pakistan",
+    subtitle: "Voice-First Complaint App",
+    image: "",
+    tech: ["React Native", "OpenAI", "Gemini", "OpenRouter", "Whisper", "Supabase"],
+    description:
+      "A voice-first civic complaint app for Pakistan. Built one AI layer that works across OpenAI, Gemini, and OpenRouter: if a model fails or its answer does not match the JSON schema, the next model is tried automatically. " +
+      "The Urdu voice feature reads the AI's result aloud and lets the user confirm or correct it by speaking, with speech-to-text handled by gpt-4o-transcribe and Whisper. " +
+      "City departments are ranked with a Bayesian average so a department with 2 cases cannot outrank one with 800.",
+    linkDemo: "https://civic-ai-pakistan-flax.vercel.app/",
+    linkGithub: "https://github.com/moneeb07/Civic-Ai-Pakistan",
+    status: "Completed",
+  },
   {
     title: "InterviewAI",
     // category : "web development + GenAI",
@@ -37,6 +48,18 @@ export const projects = [
     status: "Completed",
   },
   {
+    title: "NLP Job Recommender",
+    subtitle: "Resume-to-Job Matching Engine",
+    image: "",
+    tech: ["spaCy", "Sentence-BERT", "FAISS", "Scikit-learn", "Python"],
+    description:
+      "A two-stage recommender that matches a resume against 5,000 job posts. FAISS retrieves the top 100 candidates using Sentence-BERT embeddings, then a weighted score re-ranks them (50% semantic meaning, 30% skill overlap, 20% experience). " +
+      "Evaluated with Precision@K, Recall@K, NDCG, MRR, and MAP: against a TF-IDF baseline on 50 test queries, NDCG@10 rose from 0.329 to 0.464 (+41%) and Recall@10 from 0.445 to 0.601.",
+    linkDemo: "https://drive.google.com/drive/folders/1MDCfGRg6kWX6FYjMVgJIXlCoYX5lH3_l?usp=sharing",
+    linkGithub: "https://github.com/moneeb07/nlp_job_recommender",
+    status: "Completed",
+  },
+  {
     title: "Spm-Agent",
     // category : "web development + GenAI",
     subtitle: "Spm-Agent",
@@ -62,9 +85,10 @@ export const projects = [
   {
     title: "Reinforcement Learning Escape Room",
     // category : "Ai/Ml",
+    subtitle: "Deep RL Agents",
     tech: ["Python", "PyTorch", "Gymnasium", "NumPy"],
     description: "Implemented an RL environment where an agent navigates to collect a key while avoiding adversarial bullets and ghosts using Q-learning.",
-    linkDemo: "",
+    linkDemo: "https://drive.google.com/drive/folders/1rX8gu5GI9T9ipS2bPWdZrL0vEF_sytwm?usp=sharing",
     linkGithub: "https://github.com/moneeb07/Escape-game-rl",
     image: "/images/escape-room.png",
     status: "Completed",
