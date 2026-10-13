@@ -826,6 +826,7 @@ main {
 
 .project-modal-links {
   display: flex;
+  flex-wrap: wrap;
   gap: 12px;
   padding-top: 15px;
   border-top: 1px solid var(--jet);
@@ -1281,31 +1282,6 @@ main {
   font-size: var(--fs-5);
   font-weight: var(--fw-500);
   line-height: 1.4;
-}
-
-.project-card-demo-btn {
-  display: inline-flex;
-  align-items: center;
-  gap: 6px;
-  margin: 10px 0 0 10px;
-  padding: 6px 14px;
-  font-size: var(--fs-8);
-  font-weight: var(--fw-400);
-  color: var(--light-gray);
-  background: var(--bg-gradient-onyx);
-  border: 1px solid var(--jet);
-  border-radius: 10px;
-  transition: var(--transition-1);
-}
-
-.project-card-demo-btn:hover,
-.project-card-demo-btn:focus-visible {
-  color: var(--orange-yellow-crayola);
-  border-color: var(--orange-yellow-crayola);
-}
-
-.project-card-demo-btn svg {
-  font-size: 15px;
 }
 
 

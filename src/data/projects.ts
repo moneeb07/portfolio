@@ -2,7 +2,7 @@ export const projects = [
   {
     title: "CivicAI Pakistan",
     subtitle: "Voice-First Complaint App",
-    image: "",
+    image: "/images/civicAi.png",
     tech: ["React Native", "OpenAI", "Gemini", "OpenRouter", "Whisper", "Supabase"],
     description:
       "A voice-first civic complaint app for Pakistan. Built one AI layer that works across OpenAI, Gemini, and OpenRouter: if a model fails or its answer does not match the JSON schema, the next model is tried automatically. " +
@@ -55,7 +55,7 @@ export const projects = [
     description:
       "A two-stage recommender that matches a resume against 5,000 job posts. FAISS retrieves the top 100 candidates using Sentence-BERT embeddings, then a weighted score re-ranks them (50% semantic meaning, 30% skill overlap, 20% experience). " +
       "Evaluated with Precision@K, Recall@K, NDCG, MRR, and MAP: against a TF-IDF baseline on 50 test queries, NDCG@10 rose from 0.329 to 0.464 (+41%) and Recall@10 from 0.445 to 0.601.",
-    linkDemo: "https://drive.google.com/drive/folders/1MDCfGRg6kWX6FYjMVgJIXlCoYX5lH3_l?usp=sharing",
+    linkVideo: "https://drive.google.com/drive/folders/1MDCfGRg6kWX6FYjMVgJIXlCoYX5lH3_l?usp=sharing",
     linkGithub: "https://github.com/moneeb07/nlp_job_recommender",
     status: "Completed",
   },
@@ -88,7 +88,7 @@ export const projects = [
     subtitle: "Deep RL Agents",
     tech: ["Python", "PyTorch", "Gymnasium", "NumPy"],
     description: "Implemented an RL environment where an agent navigates to collect a key while avoiding adversarial bullets and ghosts using Q-learning.",
-    linkDemo: "https://drive.google.com/drive/folders/1rX8gu5GI9T9ipS2bPWdZrL0vEF_sytwm?usp=sharing",
+    linkVideo: "https://drive.google.com/drive/folders/1rX8gu5GI9T9ipS2bPWdZrL0vEF_sytwm?usp=sharing",
     linkGithub: "https://github.com/moneeb07/Escape-game-rl",
     image: "/images/escape-room.png",
     status: "Completed",

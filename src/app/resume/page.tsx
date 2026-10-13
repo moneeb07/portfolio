@@ -5,7 +5,7 @@ import {
   IoBriefcaseOutline,
   IoFlaskOutline,
   IoTrophyOutline,
-  IoOpenOutline,
+  IoPlayCircleOutline,
 } from "react-icons/io5";
 import { personalData } from "@/data/personalData";
 import {
@@ -24,7 +24,7 @@ type TimelineEntry = {
   duration: string;
   location?: string;
   advisors?: string;
-  linkDemo?: string;
+  linkVideo?: string;
   bullets: string[];
 };
 
@@ -82,15 +82,15 @@ function TimelineEntryItem({ entry }: { entry: TimelineEntry }) {
         ))}
       </ul>
 
-      {entry.linkDemo && (
+      {entry.linkVideo && (
         <a
-          href={entry.linkDemo}
+          href={entry.linkVideo}
           target="_blank"
           rel="noopener noreferrer"
           className="timeline-demo-link"
         >
-          <IoOpenOutline />
-          <span>View Demo</span>
+          <IoPlayCircleOutline />
+          <span>Video Demo</span>
         </a>
       )}
     </li>

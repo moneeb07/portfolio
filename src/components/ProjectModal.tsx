@@ -1,7 +1,12 @@
 "use client";
 
 import Image from "next/image";
-import { IoCloseOutline, IoOpenOutline, IoLogoGithub } from "react-icons/io5";
+import {
+  IoCloseOutline,
+  IoOpenOutline,
+  IoLogoGithub,
+  IoPlayCircleOutline,
+} from "react-icons/io5";
 
 interface Project {
   title: string;
@@ -10,6 +15,7 @@ interface Project {
   tech: string[];
   description: string;
   linkDemo?: string;
+  linkVideo?: string;
   linkGithub?: string;
   status: string;
   image?: string;
@@ -96,6 +102,17 @@ export default function ProjectModal({
                   >
                     <IoOpenOutline />
                     <span>Live Demo</span>
+                  </a>
+                )}
+                {project.linkVideo && (
+                  <a
+                    href={project.linkVideo}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="project-modal-link"
+                  >
+                    <IoPlayCircleOutline />
+                    <span>Video Demo</span>
                   </a>
                 )}
                 {project.linkGithub && (

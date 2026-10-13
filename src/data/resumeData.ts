@@ -8,7 +8,7 @@ export const researchExperience = [
     duration: "Feb 2026 - Present",
     location: "Islamabad, Pakistan",
     advisors: "Dr. M. Moazam Fraz, Dr. M. Naseer Bajwa",
-    linkDemo: "https://drive.google.com/drive/folders/1_X2zsQKVsYPljCAjnZupG1UmY2yvUCow?usp=sharing",
+    linkVideo: "https://drive.google.com/drive/folders/1_X2zsQKVsYPljCAjnZupG1UmY2yvUCow?usp=sharing",
     bullets: [
       "Building the ML digital twin of a NIEC-based air conditioner for S2Cool, a £2.8M UKRI project on low-energy cooling led by Northumbria University with 30+ partners across the UK and Pakistan.",
       "Trained ML models for 3 components (humidifier, wet channel, dry channel) on ~6,000 data points from each of 11 experiments in London, reaching R² > 0.93 and RMSE < 0.5, used for performance modeling and failure prediction.",
