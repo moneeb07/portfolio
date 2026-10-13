@@ -2,27 +2,17 @@ export default function AboutMe() {
   return (
     <>
       <p>
-        I&apos;m a Computer Science student at NUST and a Full Stack &amp; AI Engineer. I build
-        ML and deep learning models, train reinforcement learning agents, and ship LLM agents
-        that people actually use.
+        Computer Science student at NUST. I build ML/DL models for digital twins, train
+        reinforcement learning agents, and ship LLM agents that people use.
       </p>
       <p>
-        Right now I&apos;m an undergraduate researcher at MachVIS Lab, where I&apos;m building the
-        machine learning digital twin of a low-energy air conditioner for S2Cool, a £2.8M
-        UKRI-funded project led by Northumbria University. I trained models on data from 11
-        experiments in London and connected them to NVIDIA Omniverse so the 3D model runs as a
-        real-time simulation. Alongside that I&apos;ve worked as an AI &amp; Full Stack Engineer on
-        office automation, built a Deep Q-Network in my own Gymnasium environment, and shipped
-        tool-calling agents, RAG systems, speech features, and recommender systems with PyTorch,
-        FastAPI, Docker, and AWS.
+        For the £2.8M UKRI-funded S2Cool project I trained models on data from 11 experiments and
+        connected them to NVIDIA Omniverse for live 3D simulation. I trained a Deep Q-Network in my
+        own Gymnasium environment, and I have shipped tool-calling agents, RAG systems, speech
+        features, and a recommender with PyTorch, Docker, AWS, and GitHub Actions CI/CD.
       </p>
       <p>
-        I&apos;m a fast learner who adapts quickly to new technologies and applies them in
-        real-world projects. I focus on strong fundamentals, clean architecture, and continuous
-        improvement while building practical solutions. I don&apos;t claim expertise without
-        proper understanding &mdash; when I say I know a technology, it means I&apos;ve worked with
-        it deeply and can apply it confidently. If you want to build a website for your business,
-        automate your daily tasks using AI, or collaborate on research, feel free to reach out.
+        If you want to build something together or collaborate on research, feel free to reach out.
       </p>
     </>
   );
